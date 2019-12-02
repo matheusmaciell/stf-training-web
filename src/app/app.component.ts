@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   appTitle = 'Money App';
+  appTitleAux = '';
+
+  clickMe(){
+    alert("app nome foi alterado");
+    this.appTitle = this.appTitleAux;
+  }
 }
